@@ -16,13 +16,13 @@ typedef struct node //节点定义
 }NODE;
 link make_head(link l); //生成新空链表L
 int is_empty(link l); //判断链表是否为空
-void add_tail(link p,item data);
-void print_link(link p);
-link search(link l,item data);
-void insert(link pos,item data,item value);
-void modify(link l,item data,item value);
-void delete(link l,item data);
-link destory(link l);
+void add_tail(link p,item data); //在链表的尾部添加
+void print_link(link p); //打印整个链表
+link search(link l,item data);  //查询内容为data的链表的位置
+void insert(link pos,item data,item value); //插入
+void modify(link l,item data,item value);   //修改
+void delete(link l,item data);  //删除
+link destory(link l);   //摧毁整个链表
 
 #endif
 
